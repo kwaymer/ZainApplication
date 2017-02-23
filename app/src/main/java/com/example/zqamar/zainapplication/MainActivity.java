@@ -8,6 +8,8 @@ import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity {
 
     private ImageButton topRightButton;
+    private ImageButton bt1;
+    private ImageButton bt3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
