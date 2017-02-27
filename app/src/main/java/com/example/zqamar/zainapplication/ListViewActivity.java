@@ -19,6 +19,8 @@ import com.example.zqamar.zainapplication.adapter.ViewPagerAdapter;
 import com.example.zqamar.zainapplication.fragment.ContentFragment;
 import com.example.zqamar.zainapplication.fragment.FiveFragment;
 import com.example.zqamar.zainapplication.fragment.FourFragment;
+import com.example.zqamar.zainapplication.fragment.HistoryFragment;
+import com.example.zqamar.zainapplication.fragment.LoginFragment;
 import com.example.zqamar.zainapplication.fragment.OneFragment;
 import com.example.zqamar.zainapplication.fragment.ThreeFragment;
 import com.example.zqamar.zainapplication.fragment.TwoFragment;

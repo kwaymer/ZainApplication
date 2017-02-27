@@ -7,14 +7,12 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-
-
-
 import com.example.zqamar.zainapplication.adapter.ViewPagerAdapter;
 import com.example.zqamar.zainapplication.fragment.ContentFragment;
 import com.example.zqamar.zainapplication.fragment.HistoryFragment;
 import com.example.zqamar.zainapplication.fragment.LoginFragment;
 import com.example.zqamar.zainapplication.util.UtilLog;
+import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.ArrayList;
 
@@ -46,7 +44,6 @@ public class ViewPagerActivity extends AppCompatActivity {
         UtilLog.logD("ViewPagerActivity, value is: ", message);
         UtilLog.logD("ViewPagerActivity, number is: ", "" +Number);
         UtilLog.logD("ViewPagerActivity, fake number is: ", String.valueOf(fakeNumber));
-
         UtilLog.logD("ViewPagerActivity, book author is: ",book.getAuthor());
         UtilLog.logD("ViewPagerActivity, book name is: ",book.getName());
 

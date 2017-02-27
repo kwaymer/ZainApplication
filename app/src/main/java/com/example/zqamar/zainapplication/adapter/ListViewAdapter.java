@@ -8,6 +8,9 @@ import android.widget.BaseAdapter;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.zqamar.zainapplication.R;
+import com.example.zqamar.zainapplication.util.UtilDensity;
+
 import java.util.ArrayList;
 
 /**

@@ -13,6 +13,10 @@ import com.example.zqamar.zainapplication.dialog.CustomDialog;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 /**
  * Created by zqamar on 2/23/17.
  */
@@ -115,7 +119,6 @@ public class DialogActivity extends BaseActivity {
 //        waitingDialog.setCancelable(false);
         waitingDialog.setCancelable(true);
         waitingDialog.show();
-        // When the dialogue disappears from the screen, you use the dismiss listener.
         waitingDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
             @Override
             public void onDismiss(DialogInterface dialog) {
