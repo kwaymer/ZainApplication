@@ -1,5 +1,6 @@
 package com.example.zqamar.zainapplication.fragment;
 
+import android.support.v4.app.Fragment;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,7 +14,7 @@ import com.example.zqamar.zainapplication.R;
  * Created by zqamar on 2/23/17.
  */
 
-public class FiveFragment extends android.support.v4.app.Fragment {
+public class FiveFragment extends Fragment {
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -25,7 +26,7 @@ public class FiveFragment extends android.support.v4.app.Fragment {
     private OnFragmentInteractionListener mListener;
 
     public FiveFragment() {
-        // Required empty public constructor
+
     }
 
 
@@ -50,7 +51,7 @@ public class FiveFragment extends android.support.v4.app.Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_five, container, false);
     }
 

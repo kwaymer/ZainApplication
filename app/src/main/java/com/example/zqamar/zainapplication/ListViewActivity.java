@@ -1,8 +1,8 @@
 package com.example.zqamar.zainapplication;
 
+import android.support.v4.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -36,9 +36,8 @@ public class ListViewActivity extends AppCompatActivity implements AdapterView.O
     private ArrayList<String> listResult;
 
     private ViewPager viewPager;
-    private ArrayList<Fragment> fragmentList = new ArrayList<Fragment>();
-    //private TabLayout tabLayout;
-    //private GoogleApiClient client;
+    private ArrayList<Fragment> fragmentList = new ArrayList<>();
+
 
 
     @Override
@@ -63,7 +62,7 @@ public class ListViewActivity extends AppCompatActivity implements AdapterView.O
         listView.addHeaderView(listViewHeader);
 
         TextView tv = new TextView(this);
-        tv.setText("We have no more content.");
+        tv.setText("no more content.");
         tv.setTextSize(28);
         tv.setGravity(Gravity.CENTER);
         listView.addFooterView(tv);
@@ -85,13 +84,10 @@ public class ListViewActivity extends AppCompatActivity implements AdapterView.O
         listView.setAdapter(listViewAdapter);
         listView.setOnItemClickListener(this);
 
-//
-//        tabLayout =(TabLayout) findViewById(R.id.tab_layout);
-//        tabLayout.setupWithViewPager(viewPager);
-//
+
     }
 
-//    private void initial() {
+
 
 
     @Override

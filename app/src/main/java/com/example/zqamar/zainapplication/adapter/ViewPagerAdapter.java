@@ -13,23 +13,26 @@ import java.util.ArrayList;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
-    ArrayList<Fragment> fragmentList;
+    private ArrayList<Fragment> fragmentArrayList;
 
     public ViewPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 
-    public void setContent(ArrayList<Fragment> fragmentList) {
-        this.fragmentList = fragmentList;
+    public void setContent(ArrayList<Fragment> fragmentArrayList) {
+        this.fragmentArrayList = fragmentArrayList;
     }
+
     @Override
     public Fragment getItem(int position){
-        return fragmentList.get(position);
+        return fragmentArrayList.get(position);
     }
+
     @Override
     public int getCount() {
-        return fragmentList.size();
+        return fragmentArrayList.size();
     }
+
     @Override
     public void destroyItem(ViewGroup container, int position, Object object){
         super.destroyItem(container,position,object);}
@@ -40,6 +43,8 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     }
     @Override
     public CharSequence getPageTitle(int position) {
-        return fragmentList.get(position).getClass().getName();
+        return fragmentArrayList.get(position).getClass().getName();
     }
+
+
 }
